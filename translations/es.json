@@ -19,7 +19,15 @@
     },
     "notify": {
       "label": "Notificaciones",
-      "description": "Avisar al conectar y si Proton se cae."
+      "description": "Avisar al conectar y si Proton o un túnel WireGuard se caen."
+    },
+    "quick_connect": {
+      "label": "Botón de conectar",
+      "description": "Qué hace conectar sin elegir destino: el botón del panel, el clic derecho en la barra y el atajo.",
+      "options": {
+        "fastest": "Servidor más rápido",
+        "last": "Última conexión"
+      }
     }
   },
   "status": {
@@ -28,7 +36,8 @@
     "connecting": "Conectando…",
     "disconnecting": "Desconectando…",
     "working": "Cambiando…",
-    "none_active": "Ninguna activa"
+    "none_active": "Ninguna activa",
+    "cancelling": "Cancelando…"
   },
   "proton": {
     "title": "Proton VPN",
@@ -37,7 +46,11 @@
     "signin": "Iniciar sesión",
     "quick": "CONEXIÓN RÁPIDA",
     "other_country": "Otro país…",
-    "load": "carga {load}"
+    "load": "carga {load}",
+    "cancel": "Cancelar",
+    "random": "Aleatorio",
+    "last": "último: {target}",
+    "blocked": "El kill switch está bloqueando Internet. Reconecta o desactiva el kill switch."
   },
   "protection": {
     "title": "PROTECCIÓN",
@@ -47,7 +60,17 @@
     "netshield_desc": "Bloqueo por DNS mientras Proton está activo.",
     "netshield_off": "Off",
     "netshield_malware": "Malware",
-    "netshield_all": "+ Anuncios"
+    "netshield_all": "+ Anuncios",
+    "advanced": "Avanzado",
+    "port_forwarding": "Redirección de puertos",
+    "port_forwarding_desc": "Pide un puerto redirigido en servidores P2P.",
+    "vpn_accelerator": "VPN Accelerator",
+    "vpn_accelerator_desc": "Optimizaciones de velocidad. Recomendado.",
+    "moderate_nat": "NAT moderada",
+    "moderate_nat_desc": "Mejor conectividad en juegos y P2P.",
+    "ipv6": "IPv6",
+    "ipv6_desc": "Enruta el tráfico IPv6 por el túnel.",
+    "reconnect_hint": "Algunos cambios se aplican en la próxima conexión."
   },
   "wg": {
     "dns_hint": "Con Proton activo, su DNS tiene prioridad y los nombres que sirve el DNS de tu WireGuard pueden no resolverse. Pon un host de prueba en los ajustes para comprobarlo.",
@@ -72,6 +95,13 @@
     "connected": "Conectado a {server}",
     "dropped": "Proton VPN se ha desconectado",
     "connect_failed": "No se pudo conectar a Proton VPN",
-    "wg_failed": "No se pudo cambiar {name}"
+    "wg_failed": "No se pudo cambiar {name}",
+    "dropped_killswitch": "Proton VPN se ha desconectado. El kill switch puede estar bloqueando Internet.",
+    "bad_target": "Destino desconocido: {target}",
+    "wg_dropped": "{name} se ha desconectado"
+  },
+  "bar": {
+    "blocking": "bloqueando Internet",
+    "armed": "armado"
   }
 }
